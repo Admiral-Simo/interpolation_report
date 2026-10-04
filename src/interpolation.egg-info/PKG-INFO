@@ -1,0 +1,31 @@
+Metadata-Version: 2.4
+Name: interpolation
+Version: 1.0.0
+Summary: Polynomial interpolation library and Runge phenomenon analysis
+Author: Numerical Analysis Specialist
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.24.0
+Requires-Dist: matplotlib>=3.7.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.3.0; extra == "dev"
+
+# Modular Polynomial Interpolation & Runge Phenomenon Analysis
+
+A clean Python library implementing Lagrange, Newton, and Hermite polynomial interpolation algorithms, complete with error metrics, Matplotlib visualization tools, and a demonstration suite for analyzing the Runge phenomenon.
+
+## Features
+- **Lagrange Interpolation:** Implemented via Second Barycentric Form for $\mathcal{O}(N)$ evaluation complexity.
+- **Newton Interpolation:** Constructs divided difference table with Horner's nested multiplication.
+- **Hermite Interpolation:** Supports derivative matching via repeated node divided differences.
+- **Runge Phenomenon Analysis:** Visualizes edge oscillations on $f(x) = \frac{1}{1 + 25x^2}$ and demonstrates convergence mitigation via Chebyshev nodes.
+- **Automated Testing:** Full test suite verifying numerical consistency and edge cases using `pytest`.
+
+## Installation
+
+### Prerequisites
+- Python 3.11+
+
+### Install Dependencies
+```bash
+pip install -r requirements.txt
